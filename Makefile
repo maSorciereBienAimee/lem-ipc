@@ -1,5 +1,5 @@
-CC = gcc
-CFLAGS = -Wall -Werror -Wextra -fPIC
+CC = clang
+CFLAGS = -Wall -Werror -Wextra
 NAME = lemipc
 INCLUDES = ./inc
 SRCS = src/lemipc.c

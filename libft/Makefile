@@ -9,6 +9,7 @@ all : $(NAME)
 %.o : %.c $(HEADER)
 	$(CC) -c $(CFLAGS) $<
 $(NAME) : $(OBJS)
+	mkdir -p ./objs
 	mv *.o ./objs
 	ar -rc $@ ./objs/*
 clean :
